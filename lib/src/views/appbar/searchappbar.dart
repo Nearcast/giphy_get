@@ -2,7 +2,6 @@ import 'dart:math';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:giphy_get/src/client/models/type.dart';
 import 'package:giphy_get/src/providers/app_bar_provider.dart';
 import 'package:giphy_get/src/providers/sheet_provider.dart';
 import 'package:giphy_get/src/providers/tab_provider.dart';
@@ -38,9 +37,6 @@ class _SearchAppBarState extends State<SearchAppBar> {
   late Color _canvasColor;
   late Color _searchBackgroundColor;
 
-  //Is DarkMode
-  late bool _isDarkMode;
-
   @override
   void initState() {
     // Focus
@@ -63,7 +59,6 @@ class _SearchAppBarState extends State<SearchAppBar> {
     _searchBackgroundColor = Theme.of(context).textTheme.bodyText1!.color!;
 
     //Is DarkMode
-    _isDarkMode = Theme.of(context).brightness == Brightness.dark;
 
     // Providers
     _tabProvider = Provider.of<TabProvider>(context);

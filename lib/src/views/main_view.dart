@@ -60,12 +60,12 @@ class _MainViewState extends State<MainView>
       });
   Widget giphyLogo() {
     const basePath = "assets/img/";
-    const logoPath = "GIPHY_light.gif";
+    const logoPath = "GIPHY.png";
 
     return Center(
         child: Image.asset(
-      "assets/img/GIPHY.png",
-      width: MediaQuery.of(context).size.width * 0.8,
+      "$basePath$logoPath",
+      width: 200,
       package: 'giphy_get',
     ));
   }

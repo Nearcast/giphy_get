@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:giphy_get/giphy_get.dart';
 import 'package:http/http.dart';
 import 'package:matcher/matcher.dart';
