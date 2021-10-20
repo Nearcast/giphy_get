@@ -58,10 +58,22 @@ class _MainViewState extends State<MainView>
         this._scrollController = scrollController;
         return _bottomSheetBody();
       });
+  Widget giphyLogo() {
+    const basePath = "assets/img/";
+    const logoPath = "GIPHY_light.gif";
+
+    return Center(
+        child: Image.asset(
+      "assets/img/GIPHY.png",
+      width: MediaQuery.of(context).size.width * 0.8,
+      package: 'giphy_get',
+    ));
+  }
 
   Widget _bottomSheetBody() => Column(
         mainAxisSize: MainAxisSize.min,
         children: [
+          giphyLogo(),
           SearchAppBar(scrollController: this._scrollController),
           GiphyTabBar(
             tabController: _tabController,

@@ -9,7 +9,7 @@ import 'package:flutter_test/flutter_test.dart';
 class MockClient extends Mock implements Client {}
 
 void main() {
-  var _apiKey = 'your api key here';
+  var _apiKey = 'pxK45GqQUuiMBPJoUYcsolUpzUFuOLUI';
 
   group('GiphyClient', () {
     test('should fetch trending gifs', () async {
